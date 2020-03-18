@@ -1,0 +1,22 @@
+.contenedor{
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: repeat(3,1fr);
+	grid-template-rows: repeat(3,200px);
+
+
+	justify-items:center;/*Abarca solo lo que se necesita horizontalmente*/
+	align-items: center;/*Abarca solo lo que se necesita vericalmente*/
+	/*Solo ocupa lo necesario*/
+
+	/*stretch: Abarca todo el espacio disponible*/
+	/*center: Centra el elemento*/
+	/*end: envia el elemento hacia la derecha*/
+
+}
+
+.contenedor .item{
+	background: #ff8000;
+	justify-self:stretch;
+	align-self: stretch;
+}
